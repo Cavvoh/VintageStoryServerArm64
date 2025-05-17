@@ -4,7 +4,7 @@ services:
     container_name: vsserver
     ports:
       - "42420:42420" # The port you want your Vintage Story Server to listen at (mus be the same as in vsdata/serverconfig.json line 9)
-    restart: unless-stopped
+    restart: on-failure
     stdin_open: true
     tty: true
     volumes:
