@@ -3,7 +3,7 @@ services:
     image: cavvoh/vintage-story-server-arm64:latest
     container_name: vsserver
     ports:
-      - "42420:42420" # The port you want your Vintage Story Server to listen at
+      - "42420:42420" # The port you want your Vintage Story Server to listen at (mus be the same as in vsdata/serverconfig.json line 9)
     restart: unless-stopped
     stdin_open: true
     tty: true
